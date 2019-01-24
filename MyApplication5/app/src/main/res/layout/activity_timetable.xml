@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addactivity_addmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="*"
+                            >
+                            <TableRow
+                                android:layout_width="309dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:id="@+id/addtextView13"
+                                    style="@style/daytime"
+
+                                    android:layout_width="69dp"
+                                    android:text="시간" />
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:id="@+id/addmon"
+                                    style="@style/day"
+                                    android:layout_width="56dp"
+                                    android:text="월" />
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:id="@+id/addtue"
+                                    style="@style/day"
+                                    android:layout_width="58dp"
+                                    android:text="화" />
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:id="@+id/addwed"
+                                    style="@style/day"
+                                    android:layout_width="57dp"
+                                    android:text="수" />
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:id="@+id/addthu"
+                                    style="@style/day"
+                                    android:layout_width="55dp"
+                                    android:text="목" />
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:id="@+id/addfri"
+                                    style="@style/day"
+                                    android:layout_width="57dp"
+                                    android:text="금" />
+
+                            </TableRow>
+
+
+                            <!-- 첫 번째 라인(요일라인) -->
+
+                            <!-- 1교시 과목 라인-->
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:id="@+id/addclock8"
+                                    style="@style/time"
+                                    android:text="1교시\n9시~10시" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:id="@+id/addmon1"
+                                    style="@style/toggle_box_style"
+                                    android:text="" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:id="@+id/addtue1"
+                                    style="@style/toggle_box_style"
+                                    android:text="" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:id="@+id/addwed1"
+                                    style="@style/toggle_box_style"
+                                    android:text="" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:id="@+id/addthu1"
+                                    style="@style/toggle_box_style"
+                                    android:text="" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:id="@+id/addfri1"
+                                    style="@style/toggle_box_style"
+                                    android:text="" />
+
+                            </TableRow>
+
+                            <!-- 2교시 과목 라인-->
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:text="2교시\n10시~11시"
+                                    style="@style/time"
+                                    android:id="@+id/addclock9" />
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addmon2" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addtue2" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addwed2" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addthu2" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addfri2" />
+
+                            </TableRow>
+
+                            <!-- 3교시 과목 라인-->
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:text="3교시\n11시~12시"
+                                    style="@style/time"
+                                    android:id="@+id/addclock10" />
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addmon3" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addtue3" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addwed3" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addthu3" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addfri3" />
+
+                            </TableRow>
+
+                            <!-- 4교시 과목 라인-->
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:text="4교시\n12시~13시"
+                                    style="@style/time"
+                                    android:id="@+id/addclock11" />
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addmon4" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addtue4" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addwed4" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addthu4" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addfri4" />
+
+                            </TableRow>
+
+                            <!-- 5교시 과목 라인-->
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:text="5교시\n13시~14시"
+                                    style="@style/time"
+                                    android:id="@+id/addclock12" />
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addmon5" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addtue5" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addwed5" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addthu5" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addfri5" />
+                            </TableRow>
+
+                            <!-- 6교시 과목 라인-->
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:text="6교시\n14시~15시"
+                                    style="@style/time"
+                                    android:id="@+id/addclock13" />
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addmon6" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addtue6" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addwed6" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addthu6" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addfri6" />
+                            </TableRow>
+
+
+                            <!-- 7교시 과목 라인-->
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:text="7교시\n15시~16시"
+                                    style="@style/time"
+                                    android:id="@+id/addclock14" />
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addmon7" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addtue7" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addwed7" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addthu7" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addfri7" />
+                            </TableRow>
+
+                            <!-- 8교시 과목 라인-->
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:text="8교시\n16시~17시"
+                                    style="@style/time"
+                                    android:id="@+id/addclock15" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addmon8" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addtue8" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addwed8" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addthu8" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addfri8" />
+                            </TableRow>
+
+                            <!-- 9교시 과목 라인-->
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:fontFamily="@font/font1"
+                                    android:text="9교시\n17시~18시"
+                                    style="@style/time"
+                                    android:id="@+id/addclock16" />
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addmon9" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addtue9" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:id="@+id/addwed9"
+                                    style="@style/toggle_box_style"
+                                    android:text="" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addthu9" />
+
+                                <ToggleButton
+                                    android:fontFamily="@font/font1"
+                                    android:text=""
+                                    style="@style/toggle_box_style"
+                                    android:id="@+id/addfri9" />
+                                />
+                            </TableRow>
+
+                        </TableLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

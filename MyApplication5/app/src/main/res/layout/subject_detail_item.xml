@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:focusable="false"
+    >
+
+    <ImageView
+        android:id="@+id/imageView_profile"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:src="?android:attr/actionModeCloseDrawable"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:fontFamily="@font/font1"
+        android:id="@+id/textView_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:text="201121348"
+        android:layout_weight="3"
+        android:textSize="18dp"/>
+
+
+
+    <TextView
+        android:fontFamily="@font/font1"
+        android:id="@+id/textView_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:text="장준영"
+        android:layout_weight="2"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:fontFamily="@font/font1"
+        android:id="@+id/textView_atd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:text="지각"
+        android:layout_weight="1"
+        android:textSize="18dp"/>
+
+    <Button
+        style="?android:borderlessButtonStyle"
+        android:fontFamily="@font/font1"
+        android:id="@+id/button_answersheet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:text="답안"
+        android:layout_weight="2"
+        android:textSize="18dp"/>
+
+
+
+</LinearLayout>

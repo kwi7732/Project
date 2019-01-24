@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:fontFamily="@font/font1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#79a209df">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="?android:attr/actionModeCloseDrawable"/>
+
+        <TextView
+            android:fontFamily="@font/font1"
+            android:id="@+id/textView_back"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:text="댓글"
+            android:layout_toRightOf="@id/button_back"
+            android:gravity = "center_vertical"
+            android:textSize="20dp"
+            android:layout_alignBottom="@id/button_back"
+            android:layout_marginLeft="5dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_reply_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout_top"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:fontFamily="@font/font1"
+            android:id="@+id/editText_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:hint="댓글을 입력해주세요"
+            android:ems="13"/>
+
+        <ImageView
+            android:id="@+id/imageView_send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/button_send"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:fontFamily="@font/font1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_reply_insert"
+        >
+
+        <TextView
+            android:fontFamily="@font/font1"
+            android:id="@+id/textView_no_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="댓글이 없습니다"
+            android:textSize="35dp"
+            android:visibility="invisible"/>
+
+        <ListView
+            android:fontFamily="@font/font1"
+            android:id="@+id/listView_reply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="afterDescendants"
+            android:layout_marginTop="20dp">
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

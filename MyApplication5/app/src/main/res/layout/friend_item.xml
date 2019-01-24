@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:src="?android:attr/actionModeCloseDrawable"/>
+
+    <TextView
+        android:fontFamily="@font/font1"
+        android:id="@+id/textView_name"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/imageView_profile"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="장준영"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:fontFamily="@font/font1"
+        android:id="@+id/textView_major"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/textView_name"
+        android:gravity="center"
+        android:text="컴퓨터공학과"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"/>
+
+
+</RelativeLayout>

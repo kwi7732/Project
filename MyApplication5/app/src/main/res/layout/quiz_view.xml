@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#79a209df">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="?android:attr/actionModeCloseDrawable"/>
+
+        <TextView
+            android:fontFamily="@font/font1"
+            android:id="@+id/textView_back"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:text="퀴즈"
+            android:layout_toRightOf="@id/button_back"
+            android:gravity = "center_vertical"
+            android:textSize="20dp"
+            android:layout_alignBottom="@id/button_back"
+            android:layout_marginLeft="5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_top"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#dddddd"/>
+
+        <TextView
+            android:fontFamily="@font/font1"
+            android:id="@+id/textView_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:ems="20"
+            android:lines="5"
+            android:inputType="textMultiLine"
+            android:background="@android:color/white"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:hint="문제를 입력해주세요"/>
+
+
+
+        <ImageView
+            android:id="@+id/imageView_content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignLeft="@+id/textView_question"
+            android:layout_alignRight="@+id/textView_question"
+            android:layout_below="@id/textView_question"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"/>
+
+        <EditText
+            android:fontFamily="@font/font1"
+            android:id="@+id/editText_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageView_content"
+            android:layout_alignLeft="@+id/textView_question"
+            android:layout_alignRight="@+id/textView_question"
+            android:layout_marginTop="20dp"
+            android:lines="5"
+            android:inputType="textMultiLine"
+            android:background="@android:color/white"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:hint="답변"/>
+
+        <TextView
+            android:fontFamily="@font/font1"
+            android:id="@+id/textView_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageView_content"
+            android:layout_alignLeft="@+id/textView_question"
+            android:layout_alignRight="@+id/textView_question"
+            android:layout_marginTop="20dp"
+            android:lines="5"
+            android:inputType="textMultiLine"
+            android:background="@android:color/white"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:hint="답변"/>
+
+
+
+        <Button
+            android:fontFamily="@font/font1"
+            android:background="@drawable/login"
+            android:id="@+id/button_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/textView_question"
+            android:layout_alignLeft="@+id/textView_question"
+            android:layout_below="@id/editText_answer"
+            android:layout_alignStart="@+id/textView_question"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop= "10dp"
+            android:text="제출"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignRight="@+id/textView_question" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_no_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_below="@id/layout_top">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="등록된 퀴즈가 없습니다"
+            android:gravity="center"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

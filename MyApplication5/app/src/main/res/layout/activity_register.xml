@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.wonsucklee.myapplication.RegisterActivity">
+
+    <LinearLayout
+        android:background="@drawable/back2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="579dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_view"
+                android:layout_gravity="center"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:fontFamily="@font/font1"
+                    android:id="@+id/btn_camera"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#79a209df"
+                    android:hint="카메라"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff" />
+
+                <Button
+                    android:fontFamily="@font/font1"
+                    android:id="@+id/btn_album"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#79a209df"
+                    android:hint="사진 선택"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff" />
+
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_gravity="center"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColorHint="#cccccc">
+                <EditText
+                    android:fontFamily="@font/font1"
+                    android:id="@+id/nameText"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffff"
+                    android:hint="이름"
+                    android:inputType="textPersonName"
+                    android:textColor="#cccccc"
+                    android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_gravity="center"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="#cccccc">
+                    <EditText
+                        android:fontFamily="@font/font1"
+                        android:id="@+id/idText"
+                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                        android:drawableStart="@drawable/ic_person_black_24dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#ffff"
+                        android:hint="학번"
+                        android:inputType="textPersonName"
+                        android:textColor="#cccccc"
+                        android:textSize="20sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <Button
+                    android:fontFamily="@font/font1"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:background="#79a209df"
+                    android:text="중복 체크"
+                    android:layout_gravity="center"
+                    android:id="@+id/validateButton"
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColorHint="#cccccc">
+
+                <EditText
+                    android:fontFamily="@font/font1"
+                    android:password="true"
+                    android:id="@+id/passwordText"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffff"
+                    android:hint="   Password"
+                    android:inputType="textPassword"
+                    android:textColor="#cccccc"
+                    android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <Spinner
+                android:id="@+id/majorSpinener"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                ></Spinner>
+
+
+
+
+            <Button
+                android:fontFamily="@font/font1"
+                android:id="@+id/registerButton"
+                android:text="가입요청"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

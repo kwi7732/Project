@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+    <TextView
+        android:fontFamily="@font/font1"
+        android:id="@+id/textView_which"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:fontFamily="@font/font1"
+        android:id="@+id/textView_is_completed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+
+    <Button
+        android:fontFamily="@font/font1"
+        android:id="@+id/button_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="휴강"
+        android:layout_weight="1"/>
+    <Button
+        android:fontFamily="@font/font1"
+        android:id="@+id/button_quiz_insert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="퀴즈"
+        android:layout_weight="1"/>
+</LinearLayout>

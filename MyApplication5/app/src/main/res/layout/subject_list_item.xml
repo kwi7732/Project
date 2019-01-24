@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+    <!--android:background="@drawable/board_list_border"-->
+
+    <TextView
+        android:fontFamily="@font/font1"
+        android:id="@+id/textView_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="title"
+        android:gravity="right"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:fontFamily="@font/font1"
+        android:id="@+id/textView_professor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@id/textView_title"
+        android:layout_toRightOf="@id/imageView_content"
+        android:layout_marginTop="15dp"
+
+        android:gravity="right"
+        android:text="professor"
+        android:layout_alignLeft="@id/textView_title"/>
+
+
+</LinearLayout>
